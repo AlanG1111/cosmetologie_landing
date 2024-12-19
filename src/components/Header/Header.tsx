@@ -26,7 +26,10 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position='fixed'
-      sx={{ background: "rgba(249, 249, 249, 0.9)", boxShadow: "none" }}
+      sx={{
+        background: "rgba(249, 249, 249, 0.9)",
+        boxShadow: "none",
+      }}
     >
       <Container maxWidth='xl'>
         <Toolbar disableGutters sx={{ padding: "5px 0" }}>
