@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <Box
       sx={{
-        backgroundColor: "#ffffff",
+        backgroundColor: "var(--main-bg-color)",
         p: 6,
         width: "100%",
       }}
@@ -38,22 +38,22 @@ export default function Footer() {
               Київ,пр.Оболонський, 16є
             </Typography>
             <Typography variant='body2' color='text.secondary'>
-              Email: smart.atelier.kyiv@gmail.com
+              smart.atelier.kyiv@gmail.com
             </Typography>
             <Typography variant='body2' color='text.secondary'>
-              Телефон: +38096 128 02 34
+              +38050-549-54-60
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant='h6' color='text.primary' gutterBottom>
               Слідкуйте за нами
             </Typography>
-            <Link href='https://www.facebook.com/' color='inherit'>
+            <Link href='https://www.facebook.com/' className='custom-link'>
               <Facebook />
             </Link>
             <Link
               href='https://www.instagram.com/'
-              color='inherit'
+              className='custom-link'
               sx={{ pl: 1, pr: 1 }}
             >
               <Instagram />
@@ -64,7 +64,7 @@ export default function Footer() {
           <Typography variant='body2' color='text.secondary' align='center'>
             {"Copyright © "}
             <Link color='inherit' href='/'>
-              SmartАтельє
+              Косметолог естетист
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}

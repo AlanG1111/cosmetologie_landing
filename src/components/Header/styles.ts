@@ -3,7 +3,15 @@ import styled from "@emotion/styled";
 export const TelLink = styled("a")(({}) => ({
   textDecoration: "none",
   fontSize: "0.8rem",
-  fontWeight: "bold",
-  color: "inherit",
+  color: "var(--main-text-color)",
   textAlign: "center",
+  padding: "10px",
+  alignSelf: "center",
+  "&:hover": {
+    backgroundColor: "var(--active-color)",
+    color: "#fff",
+  },
+  transitionProperty: "background-color, color, border-color, box-shadow",
+  transitionDuration: "0.2s",
+  transitionTimingFunction: "ease-in-out",
 }));

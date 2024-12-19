@@ -2,6 +2,8 @@
 
 :root {
   --main-text-color: #4d473a;
+  --main-bg-color: #f6f2f0;
+  --active-color: #c7b389;
 }
 
 @font-face {
@@ -56,15 +58,17 @@ html {
 }
 
 h2 {
+  font-family: "MarckScript", sans-serif;
   margin-bottom: 20px;
   text-align: center;
-  color: rgba(188, 133, 133, 0.5);
+  color: var(--active-color);
 }
 
 h3 {
+  font-family: "MarckScript", sans-serif;
   margin-bottom: 10px;
   text-align: center;
-  color: rgba(188, 133, 133, 0.5);
+  color: var(--active-color);
 }
 
 .main-container {
@@ -83,7 +87,6 @@ h3 {
   flex-direction: column;
   width: 80%;
   padding: 40px 20px;
-  background-color: #fff;
 }
 
 .main-bg {
@@ -99,6 +102,16 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.custom-link {
+  color: var(--main-text-color) !important;
+  transition: all 0.2s ease-in;
+}
+
+.custom-link:hover {
+  color: var(--active-color) !important;
 }
 
 @media only screen and (max-width: 600px) {
