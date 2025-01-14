@@ -6,6 +6,7 @@ export const TelLink = styled("a")(({}) => ({
   color: "var(--main-text-color)",
   textAlign: "center",
   padding: "10px",
+  borderRadius: "10px",
   alignSelf: "center",
   "&:hover": {
     backgroundColor: "var(--active-color)",

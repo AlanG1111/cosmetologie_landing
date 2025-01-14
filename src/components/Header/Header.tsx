@@ -8,6 +8,8 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import TelegramIcon from "@mui/icons-material/Telegram";
 import { TelLink } from "./styles";
 
 const menuButtonStyles = {
@@ -20,6 +22,8 @@ const menuButtonStyles = {
   },
 };
 
+const phoneNumber = "+380505495460";
+
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
@@ -31,6 +35,11 @@ function ResponsiveAppBar() {
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
+  };
+
+  const handleSendMessage = () => {
+    const telegramUrl = `https://t.me/%2B${phoneNumber}`;
+    window.open(telegramUrl, "_blank");
   };
 
   return (
@@ -169,13 +178,18 @@ function ResponsiveAppBar() {
             sx={{
               flexGrow: 0,
               display: "flex",
-              flexDirection: "column",
+              flexDirection: "row",
               alignItems: "center",
               justifyContent: "center",
               height: "40px",
             }}
           >
-            <TelLink href='tel:+380961280234'>+38050-549-54-60</TelLink>
+            <TelLink onClick={handleSendMessage}>
+              <TelegramIcon />
+            </TelLink>
+            <TelLink href={`tel:${phoneNumber}`}>
+              <PhoneIphoneIcon />
+            </TelLink>
           </Box>
         </Toolbar>
       </Container>
