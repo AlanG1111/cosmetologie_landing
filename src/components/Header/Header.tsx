@@ -43,7 +43,18 @@ function ResponsiveAppBar() {
     >
       <Container maxWidth='xl'>
         <Toolbar disableGutters sx={{ padding: "5px 0" }}>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          {/* MOBILE MENU  */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+              alignItems: "center",
+              justifyContent: "flex-start",
+            }}
+          >
             <IconButton
               size='large'
               aria-label='account of current user'
@@ -98,8 +109,39 @@ function ResponsiveAppBar() {
               </Button>
             </Menu>
           </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "flex",
+                md: "none",
+              },
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div style={{ color: "black" }}>LOGO</div>
+          </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          {/* DESKTOP MENU  */}
+
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div style={{ color: "black" }}>LOGO</div>
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <Button
               onClick={handleCloseNavMenu}
               sx={menuButtonStyles}
