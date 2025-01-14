@@ -23,22 +23,13 @@ export default function Footer() {
               Про нас
             </Typography>
             <Typography variant='body2' color='text.secondary'>
-              Ательє ремонту та пошиття одягу "SmartАтельє" - ваш надійний
-              партнер у відновленні і створенні стильного одягу. Якість та
-              професіоналізм - наші основні пріоритети. Звертайтесь до нас і
-              переконайтесь у нашій дбайливості до деталей та індивідуальному
-              підході до кожного замовлення.
+              Косметолог-эстетист,без инъекций,массаж лица,обучение,
+              сопровождение
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
             <Typography variant='h6' color='text.primary' gutterBottom>
               Контакти
-            </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              Київ,пр.Оболонський, 16є
-            </Typography>
-            <Typography variant='body2' color='text.secondary'>
-              smart.atelier.kyiv@gmail.com
             </Typography>
             <Typography variant='body2' color='text.secondary'>
               +38050-549-54-60
